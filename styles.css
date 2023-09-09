@@ -1,0 +1,268 @@
+/* ROOT */
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "IBM Plex Mono", sans-serif;
+
+    /* DECLARE VARIABLE OF COLORS */
+    --color-1: #101a3b;
+    --color-2: #203972;
+    --color-3: #523589;
+    --color-4: #cb60b8;
+    --color-5: #3d9cc5;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    margin: 0 40px;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    color: var(--color-5);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.25rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.75rem;
+}
+h5 {
+    font-size: 1.5rem;
+}
+h6 {
+    font-size: 1.25rem;
+}
+
+/* BODY */
+body {
+    background-color: var(--color-1);
+}
+
+/* NAVIGATION BAR*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: var(--color-2);
+    padding: 15px 15px;
+    max-width: 80vw;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+}
+
+#contacts a {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/* HOME SECTION */
+#home-section {
+    max-width: 1000px;
+    margin: 110px auto;
+    display: flex;
+}
+
+#hero-text {
+    width: 50%;
+    margin: auto 0;
+}
+
+#type-container {
+    display: inline-block;
+}
+
+#typed-out {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    animation: typing 5s steps(20) forwards, blinking 0.8s infinite;
+    width: 0;
+}
+
+/* ANIMATION FOR TYPING */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* ANIMATION FOR BLINKING */
+@keyframes blinking {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: var(--color-5);
+    }
+}
+
+/* HERO IMAGE */
+#hero-image {
+    width: 50%;
+}
+
+#profile-picture {
+    margin-left: 100px;
+    border-radius: 100%;
+    border: 1px solid var(--color-5);
+    height: 350px;
+}
+
+/* ABOUT SECTION */
+#about-section {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#about-section-container {
+    padding: 0 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#about-section h1 {
+    color: var(--color-5);
+    text-align: center;
+    padding: 20px 0;
+}
+
+#small-info {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: justify;
+    line-height: 32px;
+    color: var(--color-4);
+}
+
+/* To set 2 box to row */
+#flex-bar-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* SKILLS BOX */
+#skills-bar {
+    width: 50%;
+    padding: 0 10px;
+}
+
+#skills-bar h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+#skills-bar p {
+    color: var(--color-4);
+    margin: 5px 0;
+    font-weight: 600;
+}
+.skills-container {
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-1);
+}
+
+.skills {
+    padding: 5px;
+    color: white;
+}
+
+/* TO ADD COLORS TO SKILLS */
+.html {
+    width: 80%;
+    background-color: var(--color-3);
+}
+.css {
+    width: 68%;
+    background-color: var(--color-4);
+}
+.js {
+    width: 65%;
+    background-color: var(--color-3);
+}
+.php {
+    width: 40%;
+    background-color: var(--color-4);
+}
+
+.sql {
+    width: 40%;
+    background-color: var(--color-3);
+}
+
+/* PERSONALITY BOX */
+#personality-bar {
+    width: 50%;
+    padding: 0 10px;
+}
+
+#personality-bar p {
+    color: var(--color-4);
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+#personality-bar h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+#personality-bar p {
+    color: var(--color-4);
+}
+.personality-container {
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-1);
+}
+
+.personality {
+    padding: 5px;
+    color: white;
+}
+
+/* TO ADD COLORS TO PERSONALITY */
+.teamwork {
+    width: 85%;
+    background-color: var(--color-3);
+}
+.continuous-learning {
+    width: 90%;
+    background-color: var(--color-4);
+}
+.time-management {
+    width: 95%;
+    background-color: var(--color-3);
+}
+.communication {
+    width: 60%;
+    background-color: var(--color-4);
+}
+
+/* PROJECT SECTIONS */
+#projects-section {
+    height: 100vh;
+}
