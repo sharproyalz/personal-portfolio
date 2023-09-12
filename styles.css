@@ -1,9 +1,12 @@
 /* ROOT */
-* {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     font-size: 16px;
     font-family: "IBM Plex Mono", sans-serif;
+    box-sizing: border-box;
 
     /* DECLARE VARIABLE OF COLORS */
     --color-1: #101a3b;
@@ -55,7 +58,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh;
+    height: 10vh;
     background-color: var(--color-2);
     padding: 15px 15px;
     margin: 0 auto;
@@ -119,76 +122,12 @@ li {
 }
 /*  
 /* HERO IMAGE */
-#hero-image {
-}
 
 #profile-picture {
     border-radius: 100%;
     border: 1px solid var(--color-5);
     height: 250px;
 }
-/* Small devices (mobile/tablets) */
-@media screen and (min-width: 576px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 2.25rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    h4 {
-        font-size: 1.75rem;
-    }
-    h5 {
-        font-size: 1.5rem;
-    }
-    h6 {
-        font-size: 1.25rem;
-    }
-    nav {
-        max-width: 90vw;
-        border-radius: 0 0 10px 10px;
-        justify-content: space-between;
-    }
-    li {
-        display: inline;
-        margin: 0 20px;
-        font-weight: 500;
-    }
-    #contacts {
-        display: block;
-    }
-    #contacts a {
-        padding: 5px;
-        margin-left: 5px;
-    }
-
-    #home-section {
-        margin: 110px auto;
-    }
-    #profile-picture {
-        height: 350px;
-    }
-}
-/* Large devices (laptops/desktops) */
-@media screen and (min-width: 992px) {
-    /* CSS rules */
-    nav {
-        max-width: 80vw;
-    }
-    li {
-        margin: 0 40px;
-    }
-}
-/* NAVIGATION BAR*/
-/* 
-
-
-
-
-
 
 /* ABOUT SECTION */
 #about-section {
@@ -205,32 +144,32 @@ li {
 #about-section h1 {
     color: var(--color-5);
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 #small-info {
     margin: 0 auto;
     max-width: 1000px;
     text-align: justify;
-    line-height: 32px;
+    line-height: 24px;
     color: var(--color-4);
 }
 
 /* To set 2 box to row */
 #flex-bar-container {
     display: flex;
-    margin-top: 30px;
+    margin-top: 3vh;
+    gap: 20px;
 }
 
 /* SKILLS BOX */
 #skills-bar {
     width: 50%;
-    padding: 0 10px;
 }
 
 #skills-bar h3 {
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 #skills-bar p {
     color: var(--color-4);
@@ -239,12 +178,12 @@ li {
 }
 .skills-container {
     width: 100%;
-    height: 10px;
+    height: 6px;
     background-color: var(--color-1);
 }
 
 .skills {
-    padding: 5px;
+    padding: 3px;
     color: white;
 }
 
@@ -279,7 +218,6 @@ li {
 /* PERSONALITY BOX */
 #personality-bar {
     width: 50%;
-    padding: 0 10px;
 }
 
 #personality-bar p {
@@ -290,7 +228,7 @@ li {
 
 #personality-bar h3 {
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 #personality-bar p {
     color: var(--color-4);
@@ -305,6 +243,134 @@ li {
     padding: 5px;
     color: white;
 }
+/* Small devices (mobile/tablets) */
+@media screen and (min-width: 576px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    nav {
+        max-width: 90vw;
+        border-radius: 0 0 10px 10px;
+        justify-content: space-between;
+    }
+    li {
+        display: inline;
+        margin: 0 20px;
+        font-weight: 500;
+    }
+    #contacts {
+        display: block;
+    }
+    #contacts a {
+        padding: 5px;
+        margin-left: 5px;
+    }
+
+    #home-section {
+        margin: 0 auto;
+        max-width: 800px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    #hero-text {
+        margin-top: 0px;
+        display: inline;
+    }
+    #hero-image {
+        display: inline;
+    }
+    #about-section h1 {
+        padding: 20px 0;
+    }
+    #small-info {
+        line-height: 32px;
+    }
+    /* SKILLS BOX */
+    #skills-bar {
+        padding: 0 10px;
+    }
+    #skills-bar h3 {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .skills-container {
+        height: 10px;
+    }
+    .skills {
+        padding: 5px;
+        color: white;
+    }
+    #personality-bar h3 {
+        margin: 10px 0;
+    }
+}
+/* Large devices (laptops/desktops) */
+@media screen and (min-width: 992px) {
+    /* CSS rules */
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.75rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+    h6 {
+        font-size: 1.25rem;
+    }
+    nav {
+        max-width: 80vw;
+    }
+    li {
+        margin: 0 40px;
+    }
+    #home-section {
+        max-width: 850px;
+    }
+    #profile-picture {
+        height: 350px;
+    }
+}
+/* NAVIGATION BAR*/
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TO ADD COLORS TO PERSONALITY */
 .teamwork {
