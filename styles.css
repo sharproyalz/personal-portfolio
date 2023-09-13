@@ -15,7 +15,10 @@
     --color-4: #cb60b8;
     --color-5: #3d9cc5;
 }
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+}
 a {
     text-decoration: none;
     color: var(--color-5);
@@ -54,7 +57,10 @@ h6 {
 body {
     background-color: var(--color-1);
 }
+
+/* NAVIGATION */
 nav {
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,18 +68,24 @@ nav {
     background-color: var(--color-2);
     padding: 15px 15px;
     margin: 0 auto;
+    z-index: 1000;
+    top: 0;
 }
+
 ul {
     list-style-type: none;
 }
+
 li {
     display: inline;
     margin: 0 10px;
     font-weight: 500;
 }
+
 #contacts {
     display: none;
 }
+
 /* HOME SECTION */
 #home-section {
     height: 90vh;
@@ -235,13 +247,65 @@ li {
 }
 .personality-container {
     width: 100%;
-    height: 10px;
+    height: 6px;
     background-color: var(--color-1);
 }
 
 .personality {
-    padding: 5px;
+    padding: 3px;
     color: white;
+}
+
+/* TO ADD COLORS TO PERSONALITY */
+.teamwork {
+    width: 85%;
+    background-color: var(--color-3);
+}
+.continuous-learning {
+    width: 90%;
+    background-color: var(--color-4);
+}
+.time-management {
+    width: 95%;
+    background-color: var(--color-3);
+}
+.communication {
+    width: 60%;
+    background-color: var(--color-4);
+}
+
+/* PROJECT SECTIONS */
+#project-section {
+    max-width: 1000px;
+    height: 100vh;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+#project-section h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.projects {
+    padding: 5px;
+    margin: 10px 0;
+    background-color: var(--color-2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projects img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+
+.project-details {
+    color: var(--color-4);
+}
+
+.flex-github-link {
+    display: none;
 }
 /* Small devices (mobile/tablets) */
 @media screen and (min-width: 576px) {
@@ -263,6 +327,8 @@ li {
     h6 {
         font-size: 1rem;
     }
+
+    /* NAVIGATION BAR*/
     nav {
         max-width: 90vw;
         border-radius: 0 0 10px 10px;
@@ -319,6 +385,31 @@ li {
     #personality-bar h3 {
         margin: 10px 0;
     }
+    .personality-container {
+        height: 10px;
+    }
+    .personality {
+        padding: 5px;
+    }
+
+    /* PROJECT SECTION */
+    .projects {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+    .projects img {
+        height: 150px;
+    }
+    .project-texts {
+        height: 50%;
+    }
+    .flex-github-link {
+        height: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
 }
 /* Large devices (laptops/desktops) */
 @media screen and (min-width: 992px) {
@@ -341,6 +432,8 @@ li {
     h6 {
         font-size: 1.25rem;
     }
+
+    /* NAVIGATION BAR*/
     nav {
         max-width: 80vw;
     }
@@ -353,44 +446,4 @@ li {
     #profile-picture {
         height: 350px;
     }
-}
-/* NAVIGATION BAR*/
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TO ADD COLORS TO PERSONALITY */
-.teamwork {
-    width: 85%;
-    background-color: var(--color-3);
-}
-.continuous-learning {
-    width: 90%;
-    background-color: var(--color-4);
-}
-.time-management {
-    width: 95%;
-    background-color: var(--color-3);
-}
-.communication {
-    width: 60%;
-    background-color: var(--color-4);
-}
-
-/* PROJECT SECTIONS */
-#projects-section {
-    height: 100vh;
 }
