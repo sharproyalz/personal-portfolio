@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>My Personal Portfolio | Contact</title>
 
         <link
             rel="shortcut icon"
             href="./images/portfolio_icon.png"
             type="image/x-icon"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="contact-style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -18,5 +18,107 @@
             rel="stylesheet"
         />
     </head>
-    <body></body>
+    <body>
+        <nav>
+            <div id="back-button">
+                <a href="index.html"> ← Back</a>
+            </div>
+        </nav>
+
+        <!-- CONTACT -->
+        <div id="contact-section">
+            <h1>Contact Me</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="user-name">Name</label><br />
+                    <input
+                        name="Username"
+                        id="user-name"
+                        type="text"
+                        placeholder="Enter your name"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email</label><br />
+                    <input
+                        name="Email"
+                        id="email-address"
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label><br />
+                    <input
+                        name="Subject"
+                        id="subject"
+                        type="text"
+                        placeholder="Your subject"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="your-message">Message</label><br />
+                    <textarea
+                        name="Message"
+                        id="your-message"
+                        rows="5"
+                        placeholder="Your message"
+                        required
+                    ></textarea>
+                </div>
+                <div class="form-group">
+                    <input id="submit-button" type="submit" value="Submit" />
+                </div>
+                <div id="form-bottom-text">
+                    I'll get in touch with you soon.
+                </div>
+            </form>
+        </div>
+        <!-- SOCIAL MEDIA LINKS -->
+        <div id="social-medias">
+            <div>
+                Interested with my <span>projects</span> and
+                <span>future projects?</span> You can check my progress in my
+                social medias.
+            </div>
+            <ul>
+                <li>
+                    <a
+                        href="https://www.instagram.com/sharproyalz/?hl=en"
+                        target="_blank"
+                        ><img
+                            src="images/instagram_icon.png"
+                            alt="Instagram Icon"
+                            height="35"
+                    /></a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/vonn-pactol-718a2a283/"
+                        target="_blank"
+                        ><img
+                            src="images/linkedin_icon.png"
+                            alt="Linkedin Icon"
+                            height="35"
+                    /></a>
+                </li>
+                <li>
+                    <a href="https://github.com/sharproyalz" target="_blank"
+                        ><img
+                            src="images/github_icon.png"
+                            alt="Github Icon"
+                            height="35"
+                    /></a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer">
+            <div id="copyright-text">
+                © 2023 Vonn Jezreel Pactol. | All rights reserved.
+            </div>
+        </div>
+    </body>
 </html>
