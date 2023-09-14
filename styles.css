@@ -71,7 +71,25 @@ nav {
     z-index: 1000;
     top: 0;
 }
-
+a:hover {
+    color: var(--color-4);
+}
+nav li {
+    position: relative;
+}
+nav ul a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    left: 0;
+    background-color: var(--color-5);
+    bottom: -10px;
+    transition: all 0.4s ease-in-out;
+}
+li:hover a::after {
+    width: 100%;
+}
 ul {
     list-style-type: none;
 }
@@ -277,7 +295,6 @@ li {
 /* PROJECT SECTIONS */
 #project-section {
     max-width: 1000px;
-    height: 100vh;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -307,6 +324,31 @@ li {
 .flex-github-link {
     display: none;
 }
+
+/* FOOTER */
+#footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: var(--color-5);
+    padding: 15px 10px;
+    margin-top: 50px;
+}
+
+#footer-text,
+#copyright-text,
+#footer-text a {
+    font-size: 12px;
+}
+
+#footer-text:hover a {
+    color: var(--color-2);
+    text-decoration: underline;
+}
+#copyright-text {
+    margin-top: 5px;
+    color: var(--color-2);
+}
+
 /* Small devices (mobile/tablets) */
 @media screen and (min-width: 576px) {
     h1 {
@@ -395,17 +437,26 @@ li {
     /* PROJECT SECTION */
     .projects {
         display: flex;
-        gap: 20px;
+        justify-content: space-evenly;
+        gap: 8px;
         padding: 10px;
     }
     .projects img {
+        max-width: 350px;
         height: 150px;
     }
+    .projects img:hover {
+        transition: all 0.4s ease-in-out;
+        scale: 1.1;
+    }
+    .project-info {
+        width: 55%;
+    }
     .project-texts {
-        height: 50%;
+        height: 75%;
     }
     .flex-github-link {
-        height: 50%;
+        height: 25%;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
