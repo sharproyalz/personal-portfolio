@@ -15,10 +15,12 @@
     --color-4: #cb60b8;
     --color-5: #3d9cc5;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 10vh;
 }
+
 a {
     text-decoration: none;
     color: var(--color-5);
@@ -82,7 +84,7 @@ ul {
 
 nav li {
     position: relative;
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
     font-weight: 500;
 }
@@ -152,9 +154,8 @@ li:hover a::after {
         border-color: var(--color-5);
     }
 }
-/*  
-/* HERO IMAGE */
 
+/* HERO IMAGE */
 #profile-picture {
     border-radius: 100%;
     border: 1px solid var(--color-5);
@@ -203,11 +204,13 @@ li:hover a::after {
     text-align: center;
     margin: 5px 0;
 }
+
 #skills-bar p {
     color: var(--color-4);
     margin: 5px 0;
     font-weight: 600;
 }
+
 .skills-container {
     width: 100%;
     height: 6px;
@@ -224,14 +227,17 @@ li:hover a::after {
     width: 80%;
     background-color: var(--color-3);
 }
+
 .css {
     width: 68%;
     background-color: var(--color-4);
 }
+
 .js {
     width: 65%;
     background-color: var(--color-3);
 }
+
 .php {
     width: 40%;
     background-color: var(--color-4);
@@ -283,14 +289,17 @@ li:hover a::after {
     width: 85%;
     background-color: var(--color-3);
 }
+
 .continuous-learning {
     width: 90%;
     background-color: var(--color-4);
 }
+
 .time-management {
     width: 95%;
     background-color: var(--color-3);
 }
+
 .communication {
     width: 60%;
     background-color: var(--color-4);
@@ -349,10 +358,12 @@ li:hover a::after {
     color: var(--color-4);
     font-weight: 600;
 }
-#footer-text:hover a {
+
+#footer-text a:hover {
     color: var(--color-2);
     text-decoration: underline;
 }
+
 #copyright-text {
     margin-top: 5px;
     color: var(--color-2);
@@ -385,19 +396,25 @@ li:hover a::after {
         border-radius: 0 0 10px 10px;
         justify-content: space-between;
     }
-    li {
+
+    nav li {
         display: inline;
-        margin: 0 20px;
+        margin: 0 16px;
         font-weight: 500;
     }
+
     #contacts {
         display: block;
     }
+
     #contacts a {
-        padding: 5px;
-        margin-left: 5px;
+        display: inline-block;
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
     }
 
+    /* HOME */
     #home-section {
         margin: 0 auto;
         max-width: 800px;
@@ -405,40 +422,46 @@ li:hover a::after {
         justify-content: space-between;
         padding: 0 10px;
     }
+
     #hero-text {
         margin-top: 0px;
-        display: inline;
     }
-    #hero-image {
-        display: inline;
-    }
+
     #about-section h1 {
         padding: 20px 0;
     }
+
     #small-info {
         line-height: 32px;
     }
+
     /* SKILLS BOX */
     #skills-bar {
         padding: 0 10px;
     }
+
     #skills-bar h3 {
         text-align: center;
         margin: 10px 0;
     }
+
     .skills-container {
         height: 10px;
     }
+
     .skills {
         padding: 5px;
         color: white;
     }
+
     #personality-bar h3 {
         margin: 10px 0;
     }
+
     .personality-container {
         height: 10px;
     }
+
     .personality {
         padding: 5px;
     }
@@ -450,20 +473,25 @@ li:hover a::after {
         gap: 8px;
         padding: 10px;
     }
+
     .projects img {
         max-width: 350px;
         height: 150px;
     }
+
     .projects img:hover {
         transition: all 0.4s ease-in-out;
         scale: 1.1;
     }
+
     .project-info {
         width: 55%;
     }
+
     .project-texts {
         height: 75%;
     }
+
     .flex-github-link {
         height: 25%;
         display: flex;
@@ -497,12 +525,15 @@ li:hover a::after {
     nav {
         max-width: 80vw;
     }
+
     li {
         margin: 0 40px;
     }
+
     #home-section {
         max-width: 850px;
     }
+
     #profile-picture {
         height: 350px;
     }
