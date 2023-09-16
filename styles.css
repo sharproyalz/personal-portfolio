@@ -499,9 +499,9 @@ li:hover a::after {
         justify-content: flex-end;
     }
 }
+
 /* Large devices (laptops/desktops) */
 @media screen and (min-width: 992px) {
-    /* CSS rules */
     h1 {
         font-size: 2.5rem;
     }
