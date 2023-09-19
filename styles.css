@@ -9,11 +9,11 @@
     box-sizing: border-box;
 
     /* DECLARE VARIABLE OF COLORS */
-    --color-1: #101a3b;
-    --color-2: #203972;
-    --color-3: #523589;
-    --color-4: #cb60b8;
-    --color-5: #3d9cc5;
+    --color-1: #080808;
+    --color-2: #1b1b1b;
+    --color-3: #ffffff;
+    --color-5: #3f8e00;
+    --color-5: #9c9c9c;
 }
 
 html {
@@ -33,7 +33,7 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
-    color: var(--color-5);
+    color: var(--color-3);
 }
 
 h1 {
@@ -68,14 +68,14 @@ nav {
     align-items: center;
     height: 10vh;
     background-color: var(--color-2);
-    padding: 15px 15px;
+    padding: 15px;
     margin: 0 auto;
     z-index: 1000;
     top: 0;
 }
 
 nav a:hover {
-    color: var(--color-4);
+    color: var(--color-3);
 }
 
 ul {
@@ -85,7 +85,7 @@ ul {
 nav li {
     position: relative;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
     font-weight: 500;
 }
 
@@ -110,7 +110,7 @@ li:hover a::after {
 
 /* HOME SECTION */
 #home-section {
-    height: 90vh;
+    height: 65vh;
     padding: 0 10px;
     margin-bottom: 30px;
     display: flex;
@@ -123,7 +123,7 @@ li:hover a::after {
     margin-top: 30px;
 }
 
-#type-container {
+/* #type-container {
     display: inline-block;
 }
 
@@ -133,40 +133,66 @@ li:hover a::after {
     white-space: nowrap;
     animation: typing 2s steps(20) forwards, blinking 0.8s infinite;
     width: 0;
-}
+} */
 
 /*ANIMATION FOR TYPING */
-@keyframes typing {
+/* @keyframes typing {
     from {
         width: 0;
     }
     to {
         width: 100%;
     }
-}
+} */
 
 /* ANIMATION FOR BLINKING */
-@keyframes blinking {
+/* @keyframes blinking {
     from {
         border-color: transparent;
     }
     to {
         border-color: var(--color-5);
     }
-}
+} */
 
 /* HERO IMAGE */
 #profile-picture {
     border-radius: 100%;
-    border: 1px solid var(--color-5);
     height: 250px;
 }
 
-/* ABOUT SECTION */
-#about-section {
-    background-color: rgba(0, 0, 0, 0.5);
+#technology-used {
+    max-width: 1000px;
+    height: 25vh;
+    margin: 0 auto;
 }
 
+#technology-used .small-info {
+    color: var(--color-3);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#technologies-icons-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.technology-icons {
+    width: 130px;
+    height: 60px;
+    border: 1px solid var(--color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+/* ABOUT SECTION */
 #about-section-container {
     padding: 0 10px;
     max-width: 1000px;
@@ -175,17 +201,16 @@ li:hover a::after {
 }
 
 #about-section h1 {
-    color: var(--color-5);
     text-align: center;
     padding: 10px 0;
 }
 
-#small-info {
+.small-info {
     margin: 0 auto;
     max-width: 1000px;
     text-align: justify;
     line-height: 24px;
-    color: var(--color-4);
+    color: var(--color-5);
 }
 
 /* To set 2 box to row */
@@ -206,7 +231,7 @@ li:hover a::after {
 }
 
 #skills-bar p {
-    color: var(--color-4);
+    color: var(--color-5);
     margin: 5px 0;
     font-weight: 600;
 }
@@ -230,7 +255,7 @@ li:hover a::after {
 
 .css {
     width: 68%;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
 }
 
 .js {
@@ -240,7 +265,7 @@ li:hover a::after {
 
 .php {
     width: 40%;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
 }
 
 .sql {
@@ -250,7 +275,7 @@ li:hover a::after {
 
 .bootstrap {
     width: 60%;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
 }
 
 /* PERSONALITY BOX */
@@ -259,7 +284,7 @@ li:hover a::after {
 }
 
 #personality-bar p {
-    color: var(--color-4);
+    color: var(--color-5);
     margin: 5px 0;
     font-weight: 600;
 }
@@ -270,7 +295,7 @@ li:hover a::after {
 }
 
 #personality-bar p {
-    color: var(--color-4);
+    color: var(--color-5);
 }
 
 .personality-container {
@@ -292,7 +317,7 @@ li:hover a::after {
 
 .continuous-learning {
     width: 90%;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
 }
 
 .time-management {
@@ -302,7 +327,7 @@ li:hover a::after {
 
 .communication {
     width: 60%;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
 }
 
 /* PROJECT SECTIONS */
@@ -332,7 +357,7 @@ li:hover a::after {
 }
 
 .project-details {
-    color: var(--color-4);
+    color: var(--color-5);
 }
 
 .flex-github-link {
@@ -355,7 +380,7 @@ li:hover a::after {
 }
 
 #footer-text a {
-    color: var(--color-4);
+    color: var(--color-5);
     font-weight: 600;
 }
 
@@ -394,12 +419,12 @@ li:hover a::after {
     nav {
         max-width: 90vw;
         border-radius: 0 0 10px 10px;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     nav li {
         display: inline;
-        margin: 0 16px;
+        margin: 0 32px;
         font-weight: 500;
     }
 
@@ -431,7 +456,7 @@ li:hover a::after {
         padding: 20px 0;
     }
 
-    #small-info {
+    .small-info {
         line-height: 32px;
     }
 
