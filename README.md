@@ -12,7 +12,6 @@ I created a website to put my profile, technologies I used, projects and etc
 
 #### Upcoming Enhancements
 
--   Improve UI
 -   Improve overall responsiveness
 -   Remove unnecesarry items (texts, bar and etc.)
 -   Fix the images
