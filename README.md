@@ -8,7 +8,7 @@ I created a website to put my profile, technologies I used, projects and etc
 
 -   Changed the color theme
 -   Changed the heading name
--   Added my technologies I used.
+-   Added technologies I used.
 
 #### Upcoming Enhancements
 
