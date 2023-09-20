@@ -1,6 +1,6 @@
 ## Personal Portfolio
 
-I created a website to put my profile, technologies I used, projects and etc
+I created a website to put my profile, technologies I used, projects and etc.
 
 ### Changelog
 
