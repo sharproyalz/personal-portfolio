@@ -11,13 +11,13 @@
             property="og:description"
             content="Welcome to my personal portfolio"
         />
-        <meta property="og:image" content="./images/portfolio_meta.png" />
-        <meta name="twitter:card" content="./images/portfolio_meta.png" />
+        <meta property="og:image" content="portfolio_meta.png" />
+        <meta name="twitter:card" content="portfolio_meta.png" />
 
         <!-- ICON -->
         <link
             rel="shortcut icon"
-            href="./images/portfolio_icon.png"
+            href="portfolio_icon.png"
             type="image/x-icon"
         />
 
@@ -46,7 +46,7 @@
                     href="https://www.instagram.com/sharproyalz/?hl=en"
                     target="_blank"
                     ><img
-                        src="images/instagram_icon.svg"
+                        src="instagram_icon.svg"
                         alt="Instagram Icon"
                         height="30"
                 /></a>
@@ -54,13 +54,13 @@
                     href="https://www.linkedin.com/in/vonn-pactol-718a2a283/"
                     target="_blank"
                     ><img
-                        src="images/linkedin_icon.svg"
+                        src="linkedin_icon.svg"
                         alt="Linkedin Icon"
                         height="30"
                 /></a>
                 <a href="https://github.com/sharproyalz" target="_blank"
                     ><img
-                        src="images/github_icon.svg"
+                        src="github_icon.svg"
                         alt="Github Icon"
                         height="30"
                 /></a>
@@ -81,7 +81,7 @@
             <div id="hero-image">
                 <img
                     id="profile-picture"
-                    src="/images/profile_image.jpg"
+                    src="profile_image.jpg"
                     alt="My Profile Picture"
                 />
             </div>
@@ -92,25 +92,25 @@
             <div class="small-info">Technology used</div>
             <div id="technologies-icons-container">
                 <div class="technology-icons">
-                    <img src="./images/html_icon.svg" alt="HTML Icon" />
+                    <img src="html_icon.svg" alt="HTML Icon" />
                 </div>
                 <div class="technology-icons">
-                    <img src="./images/css_icon.svg" alt="CSS Icon" />
+                    <img src="css_icon.svg" alt="CSS Icon" />
                 </div>
                 <div class="technology-icons">
                     <img
-                        src="./images/javascript_icon.svg"
+                        src="javascript_icon.svg"
                         alt="Javascript Icon"
                     />
                 </div>
                 <div class="technology-icons">
-                    <img src="./images/php_icon.svg" alt="PHP Icon" />
+                    <img src="php_icon.svg" alt="PHP Icon" />
                 </div>
                 <div class="technology-icons">
-                    <img src="./images/mysql_icon.svg" alt="MYSQL Icon" />
+                    <img src="mysql_icon.svg" alt="MYSQL Icon" />
                 </div>
                 <div class="technology-icons">
-                    <img src="./images/bootstrap_icon.svg" alt="" />
+                    <img src="bootstrap_icon.svg" alt="" />
                 </div>
             </div>
         </div>
@@ -120,76 +120,13 @@
             <div id="about-section-container">
                 <h1>About Me</h1>
                 <div class="small-info">
-                    Hi I am Vonn, BS-IT student who are currently studying at
-                    Cavite State University. I am passionate to become a web
-                    developer and now I am still studying Frontend technologies
-                    like HTML, CSS and Javascript. I am still honing my skills
-                    and exploring new frameworks to enhance my development
-                    skills. I have a some experience in back-end development and
-                    I am commited to increase my knowledge to become a
-                    Full-stack Developer.
-                </div>
-
-                <!-- TO MAKE IT ROW -->
-                <div id="flex-bar-container">
-                    <!-- SKILLS BAR -->
-
-                    <div id="skills-bar">
-                        <h3>Skills</h3>
-                        <p>HTML</p>
-                        <div class="skills-container">
-                            <div class="skills html"></div>
-                        </div>
-
-                        <p>CSS</p>
-                        <div class="skills-container">
-                            <div class="skills css"></div>
-                        </div>
-
-                        <p>JavaScript</p>
-                        <div class="skills-container">
-                            <div class="skills js"></div>
-                        </div>
-
-                        <p>PHP</p>
-                        <div class="skills-container">
-                            <div class="skills php"></div>
-                        </div>
-
-                        <p>SQL</p>
-                        <div class="skills-container">
-                            <div class="skills sql"></div>
-                        </div>
-
-                        <p>Bootstrap</p>
-                        <div class="skills-container">
-                            <div class="skills bootstrap"></div>
-                        </div>
-                    </div>
-
-                    <!-- PERSONALITY BAR -->
-                    <div id="personality-bar">
-                        <h3>Personality</h3>
-                        <p>Teamwork</p>
-                        <div class="personality-container">
-                            <div class="personality teamwork"></div>
-                        </div>
-
-                        <p>Continuous Learning</p>
-                        <div class="personality-container">
-                            <div class="personality continuous-learning"></div>
-                        </div>
-
-                        <p>Time Management</p>
-                        <div class="personality-container">
-                            <div class="personality time-management"></div>
-                        </div>
-
-                        <p>Communication</p>
-                        <div class="personality-container">
-                            <div class="personality communication"></div>
-                        </div>
-                    </div>
+                    Hi I am Vonn, a BS-IT student currently studying at Cavite
+                    State University. I am committed to becoming a Full-stack
+                    Developer. My frontend technologies include HTML, CSS, and
+                    JavaScript. I am still honing my skills and exploring new
+                    frameworks to enhance my development skills. I have some
+                    experience in backend development using Node.js, MySQL, and
+                    PHP.
                 </div>
             </div>
         </div>
@@ -199,46 +136,49 @@
             <h1>My Projects</h1>
 
             <!-- PROJECT-01 -->
+            {{#projects}}
             <div class="projects proj-1">
                 <a
-                    href="https://scientific-calculator-navy.vercel.app/"
+                    href="{{ websiteLink }}"
                     target="_blank"
                     ><img
-                        src="./images/scientific-calculator-thumbnail.png"
-                        alt="Scientific Calculator"
+                        src="{{ thumbnail }}"
+                        alt="{{ title }}"
                 /></a>
                 <div class="project-info">
                     <div class="project-texts">
                         <a
-                            href="https://scientific-calculator-navy.vercel.app/"
+                            href="{{ websiteLink }}"
                             target="_blank"
-                            ><h2>Scientific Calculator</h2></a
+                            ><h2>{{ title }}</h2></a
                         >
 
                         <div class="project-details">
-                            I made a copy Google's Scientific Calculator with
-                            HTML, Bootrap and Javascript. This scientific
-                            calculator can't calculate multiple advance
-                            computation.
+                            {{ description }}   
                         </div>
                     </div>
                     <div class="flex-github-link">
                         <div class="github-link">
                             <a
-                                href="https://github.com/sharproyalz/scientific-calculator"
+                                href="{{ githubLink }}"
                                 target="_blank"
-                                ><i>sharproyalz/scientific-calculator</i></a
-                            >
+                                ><img
+                                    class="github-repo-link"
+                                    src="github_icon.svg"
+                                    alt="Github Repository Link"
+                            /></a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- PROJECT-02 -->
+            {{/projects}}
+            {{! <!-- PROJECT-02 -->
             <div class="projects proj-2">
-                <a href="https://express-web-ten.vercel.app/" target="_blank"
+                <a
+                    href="https://sharp-career-website.vercel.app/"
+                    target="_blank"
                     ><img
-                        src="./images/express-jovian-thumbnail.png"
+                        src="sharp-career-thumbnail.png"
                         alt="Express Javascript Website"
                 /></a>
                 <div class="project-info">
@@ -246,12 +186,11 @@
                         <a
                             href="https://express-web-ten.vercel.app/"
                             target="_blank"
-                            ><h2>Express JS Website</h2></a
+                            ><h2>Career Website</h2></a
                         >
 
                         <div class="project-details">
-                            I used a Node.js framework called Express in this
-                            website.
+                            Career website using HTML, Bootstrap and Express
                         </div>
                     </div>
                     <div class="flex-github-link">
@@ -272,7 +211,7 @@
                     href="https://jovian-careers-bootstrap-five.vercel.app/"
                     target="_blank"
                     ><img
-                        src="./images/bootstrap-jovian-thumbnail.png"
+                        src="sudoku-solver-thumbnail.png"
                         alt="Jovian Bootstrap Website"
                 /></a>
                 <div class="project-info">
@@ -298,9 +237,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- FOOTER -->
+            </div> }}
         </div>
+            <!-- FOOTER -->
         <div id="footer">
             <div id="footer-text">
                 Want to make projects with me?

@@ -4,19 +4,26 @@ I created a website to put my profile, technologies I used, projects and etc
 
 ### Changelog
 
-#### Version 1.0.1
+### Version 1.1.0
 
--   Changed the color theme
--   Changed the heading name
--   Added technologies I used.
+-   Removed bars
+-   Added github icon instead of text
+-   Fixed the images
+-   Added mustache-express for a dynamic way of adding projects.
+-   Changed bootstrap website and express JS website to career website
+-   Added sudoku solver
 
 #### Upcoming Enhancements
 
 -   Improve overall responsiveness
--   Remove unnecesarry items (texts, bar and etc.)
--   Fix the images
--   Add github icon instead of text
--   Use a dynamic way of adding projects.
+-   Add new page for more projects
+-   Edit contact page
+
+#### Version 1.0.1
+
+-   Changed the color theme
+-   Changed the heading name
+-   Added technologies I used
 
 #### Version 1.0.0
 
