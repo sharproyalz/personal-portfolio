@@ -4,7 +4,7 @@ I created a website to put my profile, technologies I used, projects and etc.
 
 ### Changelog
 
-### Version 1.1.0
+### Version 1.1.1
 
 -   Fixed contact page UI
 -   Changed Navigation content
