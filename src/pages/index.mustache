@@ -152,7 +152,7 @@
                             target="_blank"
                             ><h2>{{ title }}</h2></a
                         >
-
+                        <p class="date-published">{{datePublished}} </p>
                         <div class="project-details">
                             {{ description }}   
                         </div>
@@ -172,78 +172,18 @@
                 </div>
             </div>
             {{/projects}}
-            {{! <!-- PROJECT-02 -->
-            <div class="projects proj-2">
-                <a
-                    href="https://sharp-career-website.vercel.app/"
-                    target="_blank"
-                    ><img
-                        src="sharp-career-thumbnail.png"
-                        alt="Express Javascript Website"
-                /></a>
-                <div class="project-info">
-                    <div class="project-texts">
-                        <a
-                            href="https://express-web-ten.vercel.app/"
-                            target="_blank"
-                            ><h2>Career Website</h2></a
-                        >
 
-                        <div class="project-details">
-                            Career website using HTML, Bootstrap and Express
-                        </div>
-                    </div>
-                    <div class="flex-github-link">
-                        <div class="github-link">
-                            <a
-                                href="https://github.com/sharproyalz/express-web"
-                                target="_blank"
-                                ><i>sharproyalz/express-web</i></a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT-03 -->
-            <div class="projects proj-3">
-                <a
-                    href="https://jovian-careers-bootstrap-five.vercel.app/"
-                    target="_blank"
-                    ><img
-                        src="sudoku-solver-thumbnail.png"
-                        alt="Jovian Bootstrap Website"
-                /></a>
-                <div class="project-info">
-                    <div class="project-texts">
-                        <a
-                            href="https://scientific-calculator-navy.vercel.app/"
-                            target="_blank"
-                            ><h2>Bootstrap Website</h2></a
-                        >
-
-                        <div class="project-details">
-                            This website is made with Bootstrap, a CSS framework
-                            to make my website responsive
-                        </div>
-                    </div>
-                    <div class="flex-github-link">
-                        <div class="github-link">
-                            <a
-                                href="https://github.com/sharproyalz/jovian-careers-bootstrap"
-                                target="_blank"
-                                ><i>sharproyalz/jovian-careers-bootstrap</i></a
-                            >
-                        </div>
-                    </div>
-                </div>
+            <!-- VIEW MORE BUTTON -->
+            {{! <div id="view-container">
+                <a href="/contact" id="view-more-projects">View more </a>
             </div> }}
+
         </div>
             <!-- FOOTER -->
         <div id="footer">
             <div id="footer-text">
                 Want to make projects with me?
-                <a href="contact.html">Contact me</a>
+                <a href="/contact">Contact me</a>
             </div>
             <div id="copyright-text">
                 © 2023 Vonn Jezreel Pactol. | All rights reserved.

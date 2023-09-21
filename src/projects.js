@@ -7,6 +7,7 @@ const projects = [
         githubLink: "https://github.com/sharproyalz/scientific-calculator",
         description:
             "Copy of Google's Scientific Calculator using HTML, Bootrap and Javascript.",
+        datePublished: "Sep 5, 2023",
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ const projects = [
         websiteLink: "https://sharp-career-website.vercel.app/",
         githubLink: "https://github.com/sharproyalz/sharp-career-website",
         description: "Career website using HTML, Bootstrap and Express.",
+        datePublished: "Sep 18, 2023",
     },
     {
         id: 3,
@@ -23,6 +25,7 @@ const projects = [
         websiteLink: "https://github.com/sharproyalz/sudoku-solver",
         githubLink: "https://github.com/sharproyalz/sudoku-solver",
         description: "Sudoku solver using Javascript.",
+        datePublished: "Sep 10, 2023",
     },
 ];
 

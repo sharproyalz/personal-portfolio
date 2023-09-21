@@ -4,7 +4,7 @@
 *::after {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 14x;
     font-family: "IBM Plex Mono", sans-serif;
     box-sizing: border-box;
 
@@ -211,9 +211,22 @@ li:hover a::after {
     color: var(--color-5);
 }
 
+.date-published {
+    font-size: 0.6rem;
+    color: var(--color-3);
+}
+
 .flex-github-link {
     display: none;
 }
+
+/* #view-container {
+    display: flex;
+    justify-content: flex-end;
+}
+#view-more-projects:hover {
+    color: var(--color-3);
+} */
 
 /* FOOTER */
 #footer {
@@ -231,12 +244,11 @@ li:hover a::after {
 }
 
 #footer-text a {
-    color: var(--color-5);
+    color: var(--color-3);
     font-weight: 600;
 }
 
 #footer-text a:hover {
-    color: var(--color-3);
     text-decoration: underline;
 }
 
@@ -247,6 +259,10 @@ li:hover a::after {
 
 /* Small devices (mobile/tablets) */
 @media screen and (min-width: 576px) {
+    * {
+        font-size: 16px;
+    }
+
     h1 {
         font-size: 2.25rem;
     }
@@ -322,17 +338,17 @@ li:hover a::after {
         max-width: 350px;
     }
 
-    .projects img:hover {
-        transition: all 0.4s ease-in-out;
-        scale: 1.1;
-    }
-
     .project-info {
         width: 55%;
     }
 
     .project-texts {
         height: 75%;
+    }
+
+    .project-texts a {
+        display: block;
+        width: fit-content;
     }
 
     .flex-github-link {
@@ -349,6 +365,10 @@ li:hover a::after {
 
 /* Large devices (laptops/desktops) */
 @media screen and (min-width: 992px) {
+    * {
+        font-size: 18px;
+    }
+
     h1 {
         font-size: 2.5rem;
     }

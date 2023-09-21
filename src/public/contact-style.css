@@ -3,16 +3,16 @@
 *::after {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "IBM Plex Mono", sans-serif;
     box-sizing: border-box;
 
     /* DECLARE VARIABLE OF COLORS */
-    --color-1: #101a3b;
-    --color-2: #203972;
-    --color-3: #523589;
-    --color-4: #cb60b8;
-    --color-5: #3d9cc5;
+    --color-1: #080808;
+    --color-2: #1b1b1b;
+    --color-3: #ffffff;
+    --color-4: #3f8e00;
+    --color-5: #9c9c9c;
 }
 
 a {
@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
-    color: var(--color-5);
+    color: var(--color-3);
 }
 
 h1 {
@@ -58,28 +58,32 @@ body {
 nav {
     position: sticky;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 10vh;
+    border-radius: 0 0 10px 10px;
     background-color: var(--color-2);
-    padding: 15px 15px;
+    padding: 0 10px;
     margin: 0 auto;
     z-index: 1000;
     top: 0;
 }
 
 nav a:hover {
-    color: var(--color-4);
+    color: var(--color-3);
 }
 
-nav #back-button {
+ul {
+    list-style-type: none;
+}
+
+nav li {
     position: relative;
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    margin: 0 12px;
     font-weight: 500;
 }
 
-nav #back-button a::after {
+nav ul a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -90,7 +94,7 @@ nav #back-button a::after {
     transition: all 0.4s ease-in-out;
 }
 
-#back-button:hover a::after {
+li:hover a::after {
     width: 100%;
 }
 
@@ -108,7 +112,7 @@ nav #back-button a::after {
 }
 
 .form-group label {
-    color: var(--color-4);
+    color: var(--color-5);
     font-weight: 600;
 }
 
@@ -132,14 +136,12 @@ form {
 textarea {
     outline: none;
     border: none;
-    border-bottom: 4px solid var(--color-4);
     position: relative;
-    transition: all 0.2s ease-in;
 }
 
 .form-group textarea:focus,
 input:focus {
-    border-bottom: 4px solid var(--color-5);
+    outline: 2px solid var(--color-1);
 }
 
 .form-group textarea {
@@ -147,20 +149,21 @@ input:focus {
 }
 
 #submit-button {
+    padding: 10px;
     cursor: pointer;
     font-weight: 600;
+    background-color: var(--color-4);
+    border: 1px solid #62ba1b;
+    color: var(--color-3);
+    border-radius: 4px;
 }
 
 #submit-button:hover {
-    border-bottom: 4px solid var(--color-4);
-    background-color: var(--color-4);
-    color: var(--color-1);
+    box-shadow: 0 8px 30px #3f8e00;
 }
 
 #form-bottom-text {
-    text-align: center;
-    margin-top: -8px;
-    color: var(--color-4);
+    color: var(--color-5);
     font-weight: 500;
     font-size: 12px;
 }
@@ -172,11 +175,11 @@ input:focus {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    color: var(--color-4);
+    color: var(--color-5);
 }
 
 #social-medias span {
-    color: var(--color-5);
+    color: var(--color-3);
 }
 
 #social-media-links {
@@ -195,7 +198,7 @@ input:focus {
 
 /* FOOTER */
 #footer {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-2);
     text-align: center;
     color: var(--color-5);
     padding: 15px 10px;
@@ -205,11 +208,45 @@ input:focus {
 #copyright-text {
     font-size: 12px;
     margin-top: 5px;
-    color: var(--color-2);
+    color: var(--color-5);
 }
 
 /* For large device */
 @media screen and (min-width: 576px) {
+    * {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+
+    /* NAVIGATION BAR*/
+    nav {
+        max-width: 90vw;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 16px;
+        font-weight: 500;
+    }
+
     .form-group label,
     .form-group input,
     .form-group textarea {
@@ -226,9 +263,32 @@ input:focus {
     }
 
     #form-bottom-text {
-        text-align: left;
-        margin-top: -8px;
-        color: var(--color-4);
+        color: var(--color-5);
         font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    * {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.75rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+    h6 {
+        font-size: 1.25rem;
     }
 }

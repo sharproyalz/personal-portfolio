@@ -17,4 +17,8 @@ app.get("/", (req, res) => {
     res.render("index", { projects: projects });
 });
 
+app.get("/contact", (req, res) => {
+    res.render("contact");
+});
+
 app.listen(3000);
